@@ -1,0 +1,59 @@
+<div class="weather">
+  <div class="weather-today">
+    <div class="today-wind">
+      <div class="wind fade-40">wind: 30mph</div>
+      <div class="wind-icon">
+        <i [WindIcon]="{type: 'dir', wind: {mph: 15, kph: 40, degrees: 100, dir: 'w'}}"></i>
+      </div>
+      <div class="wind-icon">
+        <i [WindIcon]="{type: '', wind: {mph: 15, kph: 40, degrees: 100, dir: 'w'}}"></i>
+      </div>
+    </div>
+    <div class="today-weather">
+      <h1 class="h1">
+        <i [WeatherIcon]="'chanceflurries'"></i>
+      </h1>
+      <h3 class="h3">
+        <span>80</span>
+        <span class="fade-70">/</span>
+        <span class="fade-70">67</span>
+        <span class="fade-90">&nbsp;°F</span>
+      </h3>
+    </div>
+    <div class="today-desc fade-50">
+      <p>Some clouds in the morning will give way to mainly sunny skies for the afternoon. High 18C. Winds WSW at 15 to 30 km/h.</p>
+    </div>
+  </div>
+  <div class="weather-future">
+    <ul class="forecast-list">
+      <li class="forecast-day">
+        <div class="forecast-day-date">
+          Sunday
+        </div>
+        <div class="forecast-day-icon">
+          <i [WeatherIcon]="'clear'"></i>
+        </div>
+        <div class="forecast-day-temp">
+          <span>70</span>
+          <span class="fade-60">/</span>
+          <span class="fade-60">50</span>
+          <span>&nbsp;°F</span>
+        </div>
+      </li>
+      <li class="forecast-day">
+          <div class="forecast-day-date">
+            Sunday
+          </div>
+          <div class="forecast-day-icon">
+            <i [WeatherIcon]="'clear'"></i>
+          </div>
+          <div class="forecast-day-temp">
+            <span>70</span>
+            <span class="fade-60">/</span>
+            <span class="fade-60">50</span>
+            <span>&nbsp;°F</span>
+          </div>
+        </li>
+    </ul>
+  </div>
+</div>

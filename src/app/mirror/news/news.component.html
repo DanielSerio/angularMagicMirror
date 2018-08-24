@@ -1,0 +1,11 @@
+<div class="news">
+  <ul class="headlines">
+    <li class="headline" *ngFor="let article of data.articles">
+      <div>
+        <p class="headline-title">{{article.title}}</p>
+        <h4 class="h4 headline-author">{{article.source.name}}</h4>
+      </div>
+      <small class="headline-desc fade-50">{{article.description}}</small>
+    </li>
+  </ul>
+</div>

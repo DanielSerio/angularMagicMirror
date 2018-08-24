@@ -1,0 +1,46 @@
+@import "scss/functions";
+* { box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+//TYPOGRAPHY
+.mirror {
+  font-size: 18px;
+  line-height: 24px;
+  font-size: 1em;
+  line-height: 1.33333333em;
+}
+
+.mirror .h1,
+.mirror .h1 { font-size: 3.38888889em; }
+
+.mirror .h2,
+.mirror .h2 { font-size: 2.27777778em; }
+
+.mirror .h3, 
+.mirror .h3 { font-size: 1.5em; }
+
+.mirror .h4,
+.mirror .h4,
+.mirror .h5,
+.mirror .h5 { font-size: 1em; }
+
+.mirror .h1,
+.mirror .h2,
+.mirror .h3,
+.mirror .h4,
+.mirror .h5 { 
+  font-weight: 700; 
+  line-height: 1;
+  margin: 0;
+}
+$i: 5;
+@while $i < 100 {
+  .fade-#{$i} {
+    color: fade($i);
+  }
+  $i: $i + 5;
+}

@@ -1,0 +1,72 @@
+h1 { line-height: inherit; margin: inherit; }
+
+.weather,
+.weather-today,
+.today-wind { display: flex; }
+
+
+.weather,
+.weather-today {
+  flex-direction: column;
+}
+
+.weather {
+  //align-items: flex-end;
+  display: inline-flex;
+  min-width: 200px;
+  max-width: 316px;
+}
+
+.today-weather {
+  text-align: center;
+  padding-top: 1em;
+
+  .h1 {
+    font-size: 5em;
+
+  }
+  .h3 {
+    font-weight: 400;
+    font-size: 3em;
+    margin-top: 0.55em;
+  }
+}
+
+.today-wind { 
+  justify-content: flex-end;
+  font-size: 1.75em;
+  padding: 0 0 0.5em 0;
+  border-bottom: 1px dotted rgba(white, 0.5);
+}
+
+.wind { 
+  flex: 1;
+  font-size: 0.75em;
+  text-align: left;
+}
+
+.wind-icon {
+  margin-left: 1em;
+}
+
+.today-desc { text-align: left;}
+
+.forecast-list {
+  margin: 0.5em 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.forecast-day {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-bottom: 0.35em;
+  margin-bottom: 0.25em;
+
+  &-date { 
+    flex: 1;
+    text-align: left;
+  }
+  border-bottom: 1px dotted rgba(white, 0.5);
+}

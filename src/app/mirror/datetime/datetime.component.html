@@ -1,0 +1,14 @@
+<div class="datetime">
+  <div class="date">
+    <h3 class="h3">{{datetime | date: 'EEEE MMMM dd, yyyy'}}</h3>
+  </div>
+  <div class="time">
+    <div class="time-primary">
+      <h1 class="h1">{{datetime | date: 'hh:mm'}}</h1>
+    </div>
+    <div class="time-secondary">
+      <div class="seconds fade-70">{{datetime | date: 'ss'}}</div>
+      <div class="ampm fade-50">{{datetime | date: 'a'}}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+@import "../../../scss/variables";
+.datetime {
+  max-width: 300px;
+
+}
+
+.time {
+  flex-direction: row;
+  align-items: center;
+
+
+  &-primary > .h1 { font-size: 5.5em; }
+
+  &-primary h1,
+  .seconds { font-family: $font-mono; }
+
+  &-secondary {
+    flex-direction: column;
+    font-size: 2.25em;
+    text-align: center;
+    margin-left: 0.25em;
+
+    .seconds { margin-bottom: 0.55em; }
+
+    .ampm { font-weight: bold; }
+  }
+}
+
+.time,
+.time-secondary { display: flex; }

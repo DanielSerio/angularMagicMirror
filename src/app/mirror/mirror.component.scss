@@ -1,0 +1,45 @@
+@import "../../scss/_variables";
+@import "../../scss/_functions";
+
+.mirror {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background: black;
+  color: white;
+
+  font-family: $font-sans;
+
+  &-container {
+    position: relative;
+    padding: px($mirror-page-gutter);
+  }
+}
+
+.mirror-container,
+.mirror-header,
+.mirror-footer,
+.module { display: flex; }
+
+.mirror-container,
+.module { flex-direction: column; }
+
+.mirror-container { 
+  height: 100%;
+  justify-content: space-between;
+}
+
+.mirror-header,
+.mirror-footer { flex-direction: row; }
+
+.module { 
+  flex: 1;
+
+  &:first-child { text-align: left; }
+  &:last-child { text-align: right; }
+  &:only-child { text-align: center; }
+}
+

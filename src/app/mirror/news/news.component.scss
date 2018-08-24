@@ -1,0 +1,41 @@
+.headlines {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.headline,
+.headline div { display: flex; }
+
+
+.headline {
+  flex-direction: column;
+  text-align: left;
+  border-bottom: 1px dotted rgba(white, 0.35);
+
+  div { 
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-title {
+    flex: 1;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  &-title,
+  &-desc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 850px;
+  }
+
+  &-desc {
+    margin-bottom: 1em;
+  }
+
+  &-title,
+  &-author
+  { margin: 0.5em 1em 0.5em 0; }
+}

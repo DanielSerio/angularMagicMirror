@@ -1,0 +1,7 @@
+@function px($n) { @return #{$n}px;}
+@function percent($n) { @return #{$n}\%;}
+
+@function fade($percent) {
+  $percent: (100 - $percent) / 100;
+  @return rgba(white, $percent);
+}
